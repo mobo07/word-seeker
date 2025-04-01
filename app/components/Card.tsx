@@ -20,7 +20,7 @@ import SpeechToTextBtn from "./SpeechToTextBtn";
 interface SuggestedWord {
   word: string;
   definition: string;
-  partOfSpeech: string;
+  "part-of-speech": string;
   example: string;
   phonetic?: string;
   audio?: string;
@@ -234,7 +234,9 @@ export default function Card() {
                 </>
               )}
             </DialogTitle>
-            <DialogDescription>noun</DialogDescription>
+            <DialogDescription className="text-left">
+              {selectedWord?.["part-of-speech"]}
+            </DialogDescription>
           </DialogHeader>
           <div>
             <h4 className="font-semibold">Definition:</h4>

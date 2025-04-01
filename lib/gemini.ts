@@ -11,5 +11,3 @@ export const model = genAI.getGenerativeModel({
 
 // const result = await model.generateContent(prompt);
 // console.log(result.response.text());
-
-// What's the word for a short person, almost like a dwarf, usually used in fantasies like Lord of the Rings etc...
